@@ -3,7 +3,7 @@ const connectToDB = require("./config/db.mongo");
 const UserRouter = require("./routes/user.router");
 require("dotenv").config();
 var cors = require("cors");
-const TicketBookingRouter = require("./routes/ticketBooking");
+const TicketBookingRouter = require("./routes/ticketBooking.router");
 
 const app = express();
 app.use(express.json());
