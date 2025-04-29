@@ -5,7 +5,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const TOTAL_SEATS = 80;
-const API_URL = "http://localhost:8080/bookTicket";
+const API_URL =
+  "https://ticket-booking-application-6c5e.onrender.com/bookTicket";
 
 const BookTicket = () => {
   const navigate = useNavigate();

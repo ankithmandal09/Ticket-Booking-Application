@@ -17,7 +17,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/users/login",formData);
+      const response = await axios.post(
+        "https://ticket-booking-application-6c5e.onrender.com/users/login",
+        formData
+      );
       if (response.data.token) {
         localStorage.setItem("token", response.data.token);
         navigate("/book-ticket");
