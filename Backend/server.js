@@ -11,8 +11,10 @@ app.use(cors());
 
 const PORT = process.env.PORT || 8080
 
+
 app.use("/users", UserRouter);
 app.use("/bookTicket", TicketBookingRouter)
+
 
 app.use((req, res) => {
     res.status(404).json({msg:"Request Not Found"})
