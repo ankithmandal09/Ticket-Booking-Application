@@ -35,12 +35,12 @@ A complete MERN-based solution that integrates intelligent decision-making with 
 
 ### Core Stack:
 
-- **MongoDB, Express.js, React.js, Node.js, JWT, React charts**,TailwindCSS (MERN Stack)
+- **MongoDB, Express.js, React.js, Node.js, JWT,TailwindCSS (MERN Stack)
 
 ## Directory Structure
 
 ```
-FleetManagerPro/
+Ticket-Booking_Application/
 ├─ Frontend/
 │ ├─ public/
 │ ├─ src/
