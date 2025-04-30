@@ -15,7 +15,7 @@ A complete MERN-based solution that integrates intelligent decision-making with 
 👉 Frontend - [https://ticket-booking-application-flax.vercel.app/
 ](https://ticket-booking-application-flax.vercel.app/)
 
-👉 Backend - [https://ticket-booking-application-6c5e.onrender.com ](https://ticket-booking-application-6c5e.onrender.com)
+👉 Backend - [https://ticket-booking-application-6c5e.onrender.com](https://ticket-booking-application-6c5e.onrender.com)
 
 ## Video Walkthrough
 
