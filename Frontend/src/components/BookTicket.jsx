@@ -5,8 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const TOTAL_SEATS = 80;
-const API_URL =
-  "https://ticket-booking-application-6c5e.onrender.com/bookTicket";
+const API_URL = "https://ticket-booking-application-6c5e.onrender.com/bookTicket";
 
 const BookTicket = () => {
   const navigate = useNavigate();
@@ -28,14 +27,12 @@ const BookTicket = () => {
   const fetchBookedSeats = async () => {
     try {
       const response = await axios.get(`${API_URL}/seats`);
-      const booked = response.data
-        .filter((seat) => seat.isBooked)
-        .map((seat) => seat.seatNumber);
+      const booked = response.data.filter((seat) => seat.isBooked).map((seat) => seat.seatNumber);
       if (booked.length > 0) {
         setBookedSeats(booked);
       }
     } catch (error) {
-      toast.error("Failed to fetch seat status",error);
+      toast.error(error);
     }
   };
 
@@ -48,10 +45,7 @@ const BookTicket = () => {
 
     try {
       const userId = localStorage.getItem("userId");
-      const response = await axios.post(`${API_URL}/book`, {
-        userId,
-        numberOfSeats: num,
-      });
+      const response = await axios.post(`${API_URL}/book`, {userId, numberOfSeats: num});
 
       if (response.status === 200) {
         const booked = response.data.seats.map((seat) => seat.seatNumber);
@@ -61,7 +55,7 @@ const BookTicket = () => {
         toast.success("Seats booked successfully!");
       }
     } catch (error) {
-      toast.error(error.response?.data?.message || "Booking failed");
+      toast.error(error.response?.data?.msg || "Booking failed. Please try again.");
     }
   };
 

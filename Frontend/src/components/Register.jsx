@@ -18,10 +18,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "https://ticket-booking-application-6c5e.onrender.com/users/register",
-        formData
-      );
+      const response = await axios.post("https://ticket-booking-application-6c5e.onrender.com/users/register",formData);
       if (response.data) {
         navigate("/login");
       }
