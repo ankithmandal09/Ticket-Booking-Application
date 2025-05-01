@@ -19,7 +19,7 @@ A complete MERN-based solution that integrates intelligent decision-making with 
 
 ## Video Walkthrough
 
-🎥 [Watch the Project Demo](https://drive.google.com/file/d/1NwStMAEdRGUaEZ3gJOvnpTVo01aWx2-V/view?usp=sharing)
+🎥 [Watch the Project Demo](https://drive.google.com/file/d/1vu-HNLpMvsumWmqkQ3yzimp478ndEiYw/view?usp=sharing)
 
 
 ## Features
